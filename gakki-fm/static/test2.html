@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <style>
+    .wrapper {
+      position: absolute;
+      margin: 0 auto;
+      height: 500px;
+      width: 80%;
+      overflow: hidden;
+    }
+    .marquee {
+      display: block;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      overflow: hidden;
+      -webkit-animation: marquee 15s linear infinite;
+      animation: marquee 15s linear infinite;
+      background-color: blanchedalmond;
+    }
+    @keyframes marquee {
+      0% {
+        top: 0;
+        background-color: burlywood;
+      }
+      50% {
+        top: -100%;
+        background-color: cadetblue;
+      }
+      51% {
+        left: 1000%;
+      }
+      52% {
+        top: 100%;
+        left: 0;
+      }
+      100% {
+        top: 0;
+        background-color: darkorange;
+      }
+    }
+  </style>
+  <title>Title</title>
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="marquee">
+    <p class="label_txt">我是最后一个</p>
+    <p>让我掉下眼泪的 不止昨夜的酒</p>
+    <p>让我依依不舍的 不止你的温柔</p>
+    <p>余路还要走多久 你攥着我的手</p>
+    <p>让我感到为难的 是挣扎的自由</p>
+    <p>分别总是在九月 回忆是思念的愁</p>
+    <!--
+    <p>深秋嫩绿的垂柳 亲吻着我额头</p>
+    <p>在那座阴雨的小城里 我从未忘记你</p>
+    <p>成都 带不走的 只有你</p>
+    <p>和我在成都的街头走一走</p>
+    <p>直到所有的灯都熄灭了也不停留</p>
+    <p>你会挽着我的衣袖 我会把手揣进裤兜</p>
+    <p>走到玉林路的尽头 坐在(走过)小酒馆的门口</p>
+    <p class="label_txt">我是最后一个</p>
+    -->
+  </div>
+</div>
+
+</body>
+
+</html>
